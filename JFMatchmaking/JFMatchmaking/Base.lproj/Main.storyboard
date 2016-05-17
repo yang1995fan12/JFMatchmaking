@@ -1,25 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Slide Menu Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SlideMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SlideMenuController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-gx-L9m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <connections>
+                                    <segue destination="Lgw-2f-cFh" kind="embed" id="7SR-Wu-b8i"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vea-ik-Hgl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <connections>
+                                    <segue destination="HQZ-cn-1cK" kind="embed" id="pjL-nM-PIM"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E5T-gx-L9m" secondAttribute="bottom" id="Cht-kF-ber"/>
+                            <constraint firstItem="E5T-gx-L9m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MSP-gr-IBx"/>
+                            <constraint firstItem="vea-ik-Hgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e57-ex-5iF"/>
+                            <constraint firstItem="E5T-gx-L9m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nJ2-fx-x9b"/>
+                            <constraint firstItem="vea-ik-Hgl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rOr-Gd-I0Y"/>
+                            <constraint firstAttribute="trailing" secondItem="E5T-gx-L9m" secondAttribute="trailing" id="s1f-yy-NTR"/>
+                            <constraint firstAttribute="trailing" secondItem="vea-ik-Hgl" secondAttribute="trailing" id="ubI-PO-tiW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vea-ik-Hgl" secondAttribute="bottom" id="wws-18-TiU"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="contentContainer" destination="vea-ik-Hgl" id="akx-yU-TKB"/>
+                        <outlet property="menuContainer" destination="E5T-gx-L9m" id="ySc-Ea-9D7"/>
+                        <outlet property="pan" destination="NMz-7W-GVG" id="QhP-Pv-KBj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="NMz-7W-GVG"/>
             </objects>
+            <point key="canvasLocation" x="262" y="245"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="epR-qo-npJ">
+            <objects>
+                <tableViewController storyboardIdentifier="User" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lgw-2f-cFh" customClass="UserViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cqS-Zv-nhe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VaW-dD-aml">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VaW-dD-aml" id="Fk8-Y4-Wp5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lgw-2f-cFh" id="HmD-b9-oHo"/>
+                            <outlet property="delegate" destination="Lgw-2f-cFh" id="CJX-nC-eO0"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPG-7b-1oU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="245"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="anM-uJ-gyO">
+            <objects>
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HQZ-cn-1cK" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="45r-Lb-mdc"/>
+                        <viewControllerLayoutGuide type="bottom" id="LA3-B8-1Pz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9jd-bb-5wL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.76973419407551358" blue="0.91974056715923691" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPF-iV-RYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011" y="245"/>
         </scene>
     </scenes>
 </document>
