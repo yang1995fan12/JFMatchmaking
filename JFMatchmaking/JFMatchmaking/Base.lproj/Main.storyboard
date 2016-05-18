@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-gx-L9m">
+                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5T-gx-L9m">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <connections>
                                     <segue destination="Lgw-2f-cFh" kind="embed" id="7SR-Wu-b8i"/>
@@ -30,16 +30,20 @@
                                 </connections>
                             </containerView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E5T-gx-L9m" secondAttribute="bottom" id="Cht-kF-ber"/>
                             <constraint firstItem="E5T-gx-L9m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MSP-gr-IBx"/>
                             <constraint firstItem="vea-ik-Hgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e57-ex-5iF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="E5T-gx-L9m" secondAttribute="bottom" id="fW2-aE-olR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vea-ik-Hgl" secondAttribute="bottom" id="mK6-Gy-2w9"/>
                             <constraint firstItem="E5T-gx-L9m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nJ2-fx-x9b"/>
                             <constraint firstItem="vea-ik-Hgl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rOr-Gd-I0Y"/>
                             <constraint firstAttribute="trailing" secondItem="E5T-gx-L9m" secondAttribute="trailing" id="s1f-yy-NTR"/>
                             <constraint firstAttribute="trailing" secondItem="vea-ik-Hgl" secondAttribute="trailing" id="ubI-PO-tiW"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vea-ik-Hgl" secondAttribute="bottom" id="wws-18-TiU"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NMz-7W-GVG" appends="YES" id="B1U-5V-gL8"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
@@ -49,7 +53,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="NMz-7W-GVG"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="NMz-7W-GVG">
+                    <connections>
+                        <action selector="panned:" destination="BYZ-38-t0r" id="n33-AD-i20"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="262" y="245"/>
         </scene>
@@ -93,7 +101,25 @@
                     <view key="view" contentMode="scaleToFill" id="9jd-bb-5wL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFk-jG-wXO">
+                                <rect key="frame" x="37" y="43" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="52C-Zd-XKc"/>
+                                    <constraint firstAttribute="width" constant="46" id="A7Z-Er-BpD"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testButtonPressed:" destination="HQZ-cn-1cK" eventType="touchUpInside" id="PqB-tB-xyX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.76973419407551358" blue="0.91974056715923691" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nFk-jG-wXO" firstAttribute="top" secondItem="45r-Lb-mdc" secondAttribute="bottom" constant="43" id="RTK-mh-9bt"/>
+                            <constraint firstItem="nFk-jG-wXO" firstAttribute="leading" secondItem="9jd-bb-5wL" secondAttribute="leading" constant="37" id="WCM-aF-vXE"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>

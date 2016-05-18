@@ -10,7 +10,7 @@
 #define UtilsMacro_h
 
 //动画时间
-#define kAnimationDuration 0.35;
+#define kAnimationDuration 0.35
 
 //通知类型
 #define kNotificationTypeLogin @"Login"
