@@ -14,9 +14,24 @@
 
 @implementation HomeViewController
 
+//视图将要出现
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.slideMenuController.pan.enabled = YES;
+}
+//视图将要消失
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.slideMenuController.pan.enabled = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //设置委托
+    NavigationHelper *helper = [NavigationHelper defaultHelper];
+    self.navigationController.delegate = helper;
+    
 }
 
 - (IBAction)testButtonPressed:(id)sender {

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SlideMenuController.h"
+#import "Passable.h"
+#import "NavigationHelper.h"
+#import "UINavigationController+Passable.h"
 
 @interface UIViewController (Base)
 //readonly（只读）

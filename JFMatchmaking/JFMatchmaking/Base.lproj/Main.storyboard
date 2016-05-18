@@ -26,7 +26,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vea-ik-Hgl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <connections>
-                                    <segue destination="HQZ-cn-1cK" kind="embed" id="pjL-nM-PIM"/>
+                                    <segue destination="6kI-fO-lRP" kind="embed" id="QsK-h7-SG2"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -103,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFk-jG-wXO">
-                                <rect key="frame" x="37" y="43" width="46" height="30"/>
+                                <rect key="frame" x="37" y="107" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="52C-Zd-XKc"/>
@@ -121,11 +121,32 @@
                             <constraint firstItem="nFk-jG-wXO" firstAttribute="leading" secondItem="9jd-bb-5wL" secondAttribute="leading" constant="37" id="WCM-aF-vXE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rL3-Jk-R8F"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPF-iV-RYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1011" y="245"/>
+            <point key="canvasLocation" x="1515" y="245"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T1a-y4-JUg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kI-fO-lRP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="og9-Pn-Fy8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HQZ-cn-1cK" kind="relationship" relationship="rootViewController" id="p8k-8o-nKe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4g-Yn-9hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="245"/>
         </scene>
     </scenes>
 </document>

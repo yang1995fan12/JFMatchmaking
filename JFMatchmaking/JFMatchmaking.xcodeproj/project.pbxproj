@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B154ACFED8BCF0BEA349E3D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 917702E02903E4D28FD22425 /* libPods.a */; };
 		B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B081CEC61E800364D78 /* UIViewController+Base.m */; };
+		B8938B0F1CEC941200364D78 /* Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B0E1CEC941200364D78 /* Bucket.m */; };
+		B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B131CEC9ADB00364D78 /* NavigationHelper.m */; };
+		B8938B181CECA35D00364D78 /* UINavigationController+Passable.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B171CECA35D00364D78 /* UINavigationController+Passable.m */; };
 		B8A6157B1CEB3D2700AA6AB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A6157A1CEB3D2700AA6AB6 /* main.m */; };
 		B8A6157E1CEB3D2700AA6AB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A6157D1CEB3D2700AA6AB6 /* AppDelegate.m */; };
 		B8A615841CEB3D2700AA6AB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A615821CEB3D2700AA6AB6 /* Main.storyboard */; };
@@ -45,6 +48,13 @@
 		934995AE00BDC9693A11886F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B8938B071CEC61E800364D78 /* UIViewController+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Base.h"; sourceTree = "<group>"; };
 		B8938B081CEC61E800364D78 /* UIViewController+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Base.m"; sourceTree = "<group>"; };
+		B8938B0D1CEC941200364D78 /* Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bucket.h; sourceTree = "<group>"; };
+		B8938B0E1CEC941200364D78 /* Bucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bucket.m; sourceTree = "<group>"; };
+		B8938B111CEC99FE00364D78 /* Passable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Passable.h; sourceTree = "<group>"; };
+		B8938B121CEC9ADB00364D78 /* NavigationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationHelper.h; sourceTree = "<group>"; };
+		B8938B131CEC9ADB00364D78 /* NavigationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
+		B8938B161CECA35D00364D78 /* UINavigationController+Passable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Passable.h"; sourceTree = "<group>"; };
+		B8938B171CECA35D00364D78 /* UINavigationController+Passable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Passable.m"; sourceTree = "<group>"; };
 		B8A615761CEB3D2700AA6AB6 /* JFMatchmaking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JFMatchmaking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A6157A1CEB3D2700AA6AB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8A6157C1CEB3D2700AA6AB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,8 +110,37 @@
 			children = (
 				B8938B071CEC61E800364D78 /* UIViewController+Base.h */,
 				B8938B081CEC61E800364D78 /* UIViewController+Base.m */,
+				B8938B161CECA35D00364D78 /* UINavigationController+Passable.h */,
+				B8938B171CECA35D00364D78 /* UINavigationController+Passable.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		B8938B0C1CEC93E400364D78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B8938B101CEC973C00364D78 /* Passable */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B8938B101CEC973C00364D78 /* Passable */ = {
+			isa = PBXGroup;
+			children = (
+				B8938B0D1CEC941200364D78 /* Bucket.h */,
+				B8938B0E1CEC941200364D78 /* Bucket.m */,
+				B8938B111CEC99FE00364D78 /* Passable.h */,
+			);
+			name = Passable;
+			sourceTree = "<group>";
+		};
+		B8938B151CECA2AB00364D78 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B8938B121CEC9ADB00364D78 /* NavigationHelper.h */,
+				B8938B131CEC9ADB00364D78 /* NavigationHelper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		B8A6156D1CEB3D2700AA6AB6 = {
@@ -175,6 +214,8 @@
 				B8A615B51CEB4CDE00AA6AB6 /* User */,
 				B8A615BC1CEB4D6D00AA6AB6 /* Home */,
 				B8938B0B1CEC620400364D78 /* Categories */,
+				B8938B0C1CEC93E400364D78 /* Classes */,
+				B8938B151CECA2AB00364D78 /* Helpers */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -422,8 +463,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A615B41CEB4CB800AA6AB6 /* SlideMenuController.m in Sources */,
+				B8938B0F1CEC941200364D78 /* Bucket.m in Sources */,
 				B8A615BB1CEB4D5600AA6AB6 /* UserViewController.m in Sources */,
 				B8A6157E1CEB3D2700AA6AB6 /* AppDelegate.m in Sources */,
+				B8938B181CECA35D00364D78 /* UINavigationController+Passable.m in Sources */,
+				B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */,
 				B8A615871CEB3D2700AA6AB6 /* JFMatchmaking.xcdatamodeld in Sources */,
 				B8A6157B1CEB3D2700AA6AB6 /* main.m in Sources */,
 				B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */,
