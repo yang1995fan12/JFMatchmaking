@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B154ACFED8BCF0BEA349E3D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 917702E02903E4D28FD22425 /* libPods.a */; };
 		B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D53FE1CED66600023061A /* AFNetworkingHelper.m */; };
+		B81D54451CED95FA0023061A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D54441CED95FA0023061A /* User.m */; };
 		B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B081CEC61E800364D78 /* UIViewController+Base.m */; };
 		B8938B0F1CEC941200364D78 /* Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B0E1CEC941200364D78 /* Bucket.m */; };
 		B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B131CEC9ADB00364D78 /* NavigationHelper.m */; };
@@ -50,6 +51,8 @@
 		B81D53FD1CED66600023061A /* AFNetworkingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHelper.h; sourceTree = "<group>"; };
 		B81D53FE1CED66600023061A /* AFNetworkingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHelper.m; sourceTree = "<group>"; };
 		B81D54001CED66C10023061A /* URLMacor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacor.h; sourceTree = "<group>"; };
+		B81D54431CED95FA0023061A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B81D54441CED95FA0023061A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		B8938B071CEC61E800364D78 /* UIViewController+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Base.h"; sourceTree = "<group>"; };
 		B8938B081CEC61E800364D78 /* UIViewController+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Base.m"; sourceTree = "<group>"; };
 		B8938B0D1CEC941200364D78 /* Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bucket.h; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				B8A615851CEB3D2700AA6AB6 /* JFMatchmaking.xcdatamodeld */,
+				B81D54431CED95FA0023061A /* User.h */,
+				B81D54441CED95FA0023061A /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -477,6 +482,7 @@
 				B8938B181CECA35D00364D78 /* UINavigationController+Passable.m in Sources */,
 				B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */,
 				B8A615871CEB3D2700AA6AB6 /* JFMatchmaking.xcdatamodeld in Sources */,
+				B81D54451CED95FA0023061A /* User.m in Sources */,
 				B8A6157B1CEB3D2700AA6AB6 /* main.m in Sources */,
 				B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */,
 				B8A615BF1CEB4D9500AA6AB6 /* HomeViewController.m in Sources */,
