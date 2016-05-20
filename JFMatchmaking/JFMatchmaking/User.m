@@ -36,12 +36,12 @@ static User *_instance = nil;
 
 #pragma mark - NSCoding
 
-- (void)encodeWithCode:(NSCoder *)coder {
+- (void)encodeWithCoder:(NSCoder *)coder {
     [coder encodeObject:_objectId forKey:@"objectId"];
     [coder encodeObject:_username forKey:@"username"];
 }
 
-- (instancetype)initWithCode:(NSCoder *)coder {
+- (instancetype)initWithCoder:(NSCoder *)coder {
     if (self = [super init]) {
         _objectId = [coder decodeObjectForKey:@"objectId"];
         _username = [coder decodeObjectForKey:@"username"];

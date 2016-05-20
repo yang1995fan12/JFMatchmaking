@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B154ACFED8BCF0BEA349E3D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 917702E02903E4D28FD22425 /* libPods.a */; };
+		B8125B6C1CEEF0ED00B12116 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8125B6B1CEEF0ED00B12116 /* UIView+Corner.m */; };
 		B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D53FE1CED66600023061A /* AFNetworkingHelper.m */; };
 		B81D54451CED95FA0023061A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D54441CED95FA0023061A /* User.m */; };
 		B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B081CEC61E800364D78 /* UIViewController+Base.m */; };
@@ -48,6 +49,8 @@
 		42EF440544D838E8C03A6D8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		917702E02903E4D28FD22425 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		934995AE00BDC9693A11886F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B8125B6A1CEEF0ED00B12116 /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
+		B8125B6B1CEEF0ED00B12116 /* UIView+Corner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
 		B81D53FD1CED66600023061A /* AFNetworkingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHelper.h; sourceTree = "<group>"; };
 		B81D53FE1CED66600023061A /* AFNetworkingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHelper.m; sourceTree = "<group>"; };
 		B81D54001CED66C10023061A /* URLMacor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacor.h; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				B8938B081CEC61E800364D78 /* UIViewController+Base.m */,
 				B8938B161CECA35D00364D78 /* UINavigationController+Passable.h */,
 				B8938B171CECA35D00364D78 /* UINavigationController+Passable.m */,
+				B8125B6A1CEEF0ED00B12116 /* UIView+Corner.h */,
+				B8125B6B1CEEF0ED00B12116 /* UIView+Corner.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				B8A615BB1CEB4D5600AA6AB6 /* UserViewController.m in Sources */,
 				B8A6157E1CEB3D2700AA6AB6 /* AppDelegate.m in Sources */,
 				B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */,
+				B8125B6C1CEEF0ED00B12116 /* UIView+Corner.m in Sources */,
 				B8938B181CECA35D00364D78 /* UINavigationController+Passable.m in Sources */,
 				B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */,
 				B8A615871CEB3D2700AA6AB6 /* JFMatchmaking.xcdatamodeld in Sources */,
