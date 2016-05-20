@@ -50,6 +50,12 @@
     
 }
 
+- (IBAction)headTapped {
+    if (_logged == NO) {
+        [self pushWithStoryboardID:@"Login" data:nil];
+    }
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -162,11 +168,11 @@
 }
 
 - (void)pushWithStoryboardID:(NSString *)identifier data:(NSObject *)data {
-    //
+    //导航效果
     UINavigationController *nav = self.parentViewController.childViewControllers[1];
     [nav pushViewControllerWithStoryboardID:identifier animated:NO data:data];
     
-    //
+    //抽屉效果
     [self.slideMenuController switchController];
 }
 

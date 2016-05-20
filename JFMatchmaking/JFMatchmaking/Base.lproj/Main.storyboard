@@ -74,8 +74,9 @@
                             <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-2h-PWC">
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="c6a-2h-PWC">
                                     <rect key="frame" x="65" y="24" width="60" height="60"/>
+                                    <gestureRecognizers/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="PAH-1Z-TTh"/>
                                         <constraint firstAttribute="height" constant="60" id="d8V-mB-Sqx"/>
@@ -85,6 +86,9 @@
                                             <real key="value" value="30"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="tSa-bt-hrZ" appends="YES" id="iiP-sq-3lt"/>
+                                    </connections>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击头像登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BN2-eF-jVh">
                                     <rect key="frame" x="35" y="102" width="120" height="24"/>
@@ -185,6 +189,11 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPG-7b-1oU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tSa-bt-hrZ">
+                    <connections>
+                        <action selector="headTapped" destination="Lgw-2f-cFh" id="GYY-Jj-UXe"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="644" y="245"/>
         </scene>
@@ -225,6 +234,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPF-iV-RYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1515" y="245"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7yo-RU-WLG">
+            <objects>
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aIs-88-DyJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="byu-th-KE0"/>
+                        <viewControllerLayoutGuide type="bottom" id="t1u-xt-Qio"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eit-Ah-yEv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0g-9T-241" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="T1a-y4-JUg">
