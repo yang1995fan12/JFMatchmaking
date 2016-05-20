@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B154ACFED8BCF0BEA349E3D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 917702E02903E4D28FD22425 /* libPods.a */; };
 		B8125B6C1CEEF0ED00B12116 /* UIView+Corner.m in Sources */ = {isa = PBXBuildFile; fileRef = B8125B6B1CEEF0ED00B12116 /* UIView+Corner.m */; };
+		B8125B711CEF46FE00B12116 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8125B701CEF46FE00B12116 /* LoginViewController.m */; };
+		B8125B751CEF4B9500B12116 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8125B741CEF4B9500B12116 /* RegisterViewController.m */; };
 		B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D53FE1CED66600023061A /* AFNetworkingHelper.m */; };
 		B81D54451CED95FA0023061A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D54441CED95FA0023061A /* User.m */; };
 		B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B081CEC61E800364D78 /* UIViewController+Base.m */; };
@@ -51,6 +53,10 @@
 		934995AE00BDC9693A11886F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B8125B6A1CEEF0ED00B12116 /* UIView+Corner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Corner.h"; sourceTree = "<group>"; };
 		B8125B6B1CEEF0ED00B12116 /* UIView+Corner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Corner.m"; sourceTree = "<group>"; };
+		B8125B6F1CEF46FE00B12116 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B8125B701CEF46FE00B12116 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B8125B731CEF4B9500B12116 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		B8125B741CEF4B9500B12116 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		B81D53FD1CED66600023061A /* AFNetworkingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHelper.h; sourceTree = "<group>"; };
 		B81D53FE1CED66600023061A /* AFNetworkingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHelper.m; sourceTree = "<group>"; };
 		B81D54001CED66C10023061A /* URLMacor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacor.h; sourceTree = "<group>"; };
@@ -115,6 +121,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8125B6E1CEF46B700B12116 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B8125B6F1CEF46FE00B12116 /* LoginViewController.h */,
+				B8125B701CEF46FE00B12116 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		B8125B721CEF4B4500B12116 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B8125B731CEF4B9500B12116 /* RegisterViewController.h */,
+				B8125B741CEF4B9500B12116 /* RegisterViewController.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
 		B8938B0B1CEC620400364D78 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +249,8 @@
 			children = (
 				B8A615B21CEB4CB800AA6AB6 /* SlideMenuController.h */,
 				B8A615B31CEB4CB800AA6AB6 /* SlideMenuController.m */,
+				B8125B6E1CEF46B700B12116 /* Login */,
+				B8125B721CEF4B4500B12116 /* Register */,
 				B8A615B51CEB4CDE00AA6AB6 /* User */,
 				B8A615BC1CEB4D6D00AA6AB6 /* Home */,
 				B8938B0B1CEC620400364D78 /* Categories */,
@@ -483,11 +509,13 @@
 				B8938B0F1CEC941200364D78 /* Bucket.m in Sources */,
 				B8A615BB1CEB4D5600AA6AB6 /* UserViewController.m in Sources */,
 				B8A6157E1CEB3D2700AA6AB6 /* AppDelegate.m in Sources */,
+				B8125B711CEF46FE00B12116 /* LoginViewController.m in Sources */,
 				B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */,
 				B8125B6C1CEEF0ED00B12116 /* UIView+Corner.m in Sources */,
 				B8938B181CECA35D00364D78 /* UINavigationController+Passable.m in Sources */,
 				B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */,
 				B8A615871CEB3D2700AA6AB6 /* JFMatchmaking.xcdatamodeld in Sources */,
+				B8125B751CEF4B9500B12116 /* RegisterViewController.m in Sources */,
 				B81D54451CED95FA0023061A /* User.m in Sources */,
 				B8A6157B1CEB3D2700AA6AB6 /* main.m in Sources */,
 				B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */,
