@@ -13,6 +13,9 @@
 		B8125B751CEF4B9500B12116 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8125B741CEF4B9500B12116 /* RegisterViewController.m */; };
 		B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D53FE1CED66600023061A /* AFNetworkingHelper.m */; };
 		B81D54451CED95FA0023061A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B81D54441CED95FA0023061A /* User.m */; };
+		B83CEA471CF187C400651B32 /* VerifyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CEA461CF187C400651B32 /* VerifyHelper.m */; };
+		B83CEA4A1CF19FC700651B32 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CEA491CF19FC700651B32 /* UIHelper.m */; };
+		B83CEA4D1CF1A31F00651B32 /* UIColor+Int.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CEA4C1CF1A31F00651B32 /* UIColor+Int.m */; };
 		B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B081CEC61E800364D78 /* UIViewController+Base.m */; };
 		B8938B0F1CEC941200364D78 /* Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B0E1CEC941200364D78 /* Bucket.m */; };
 		B8938B141CEC9ADB00364D78 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8938B131CEC9ADB00364D78 /* NavigationHelper.m */; };
@@ -62,6 +65,12 @@
 		B81D54001CED66C10023061A /* URLMacor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLMacor.h; sourceTree = "<group>"; };
 		B81D54431CED95FA0023061A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		B81D54441CED95FA0023061A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B83CEA451CF187C400651B32 /* VerifyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyHelper.h; sourceTree = "<group>"; };
+		B83CEA461CF187C400651B32 /* VerifyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyHelper.m; sourceTree = "<group>"; };
+		B83CEA481CF19FC700651B32 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHelper.h; sourceTree = "<group>"; };
+		B83CEA491CF19FC700651B32 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHelper.m; sourceTree = "<group>"; };
+		B83CEA4B1CF1A31F00651B32 /* UIColor+Int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Int.h"; sourceTree = "<group>"; };
+		B83CEA4C1CF1A31F00651B32 /* UIColor+Int.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Int.m"; sourceTree = "<group>"; };
 		B8938B071CEC61E800364D78 /* UIViewController+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Base.h"; sourceTree = "<group>"; };
 		B8938B081CEC61E800364D78 /* UIViewController+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Base.m"; sourceTree = "<group>"; };
 		B8938B0D1CEC941200364D78 /* Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bucket.h; sourceTree = "<group>"; };
@@ -148,6 +157,8 @@
 				B8938B171CECA35D00364D78 /* UINavigationController+Passable.m */,
 				B8125B6A1CEEF0ED00B12116 /* UIView+Corner.h */,
 				B8125B6B1CEEF0ED00B12116 /* UIView+Corner.m */,
+				B83CEA4B1CF1A31F00651B32 /* UIColor+Int.h */,
+				B83CEA4C1CF1A31F00651B32 /* UIColor+Int.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -177,6 +188,10 @@
 				B8938B131CEC9ADB00364D78 /* NavigationHelper.m */,
 				B81D53FD1CED66600023061A /* AFNetworkingHelper.h */,
 				B81D53FE1CED66600023061A /* AFNetworkingHelper.m */,
+				B83CEA451CF187C400651B32 /* VerifyHelper.h */,
+				B83CEA461CF187C400651B32 /* VerifyHelper.m */,
+				B83CEA481CF19FC700651B32 /* UIHelper.h */,
+				B83CEA491CF19FC700651B32 /* UIHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -518,8 +533,11 @@
 				B8125B751CEF4B9500B12116 /* RegisterViewController.m in Sources */,
 				B81D54451CED95FA0023061A /* User.m in Sources */,
 				B8A6157B1CEB3D2700AA6AB6 /* main.m in Sources */,
+				B83CEA4D1CF1A31F00651B32 /* UIColor+Int.m in Sources */,
 				B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */,
+				B83CEA471CF187C400651B32 /* VerifyHelper.m in Sources */,
 				B8A615BF1CEB4D9500AA6AB6 /* HomeViewController.m in Sources */,
+				B83CEA4A1CF19FC700651B32 /* UIHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
