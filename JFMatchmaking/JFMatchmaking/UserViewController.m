@@ -147,7 +147,7 @@
             UIImage *image = [UIImage imageNamed:@"bg"];
             [_headImageView sd_setImageWithURL:url placeholderImage:image];
         } else {
-            [self defaultSetting];
+            _headImageView.image = [UIImage imageNamed:@"bg"];
         }
         
     } else {
