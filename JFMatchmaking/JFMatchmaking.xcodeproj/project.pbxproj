@@ -35,6 +35,8 @@
 		B8A615B41CEB4CB800AA6AB6 /* SlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A615B31CEB4CB800AA6AB6 /* SlideMenuController.m */; };
 		B8A615BB1CEB4D5600AA6AB6 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A615BA1CEB4D5600AA6AB6 /* UserViewController.m */; };
 		B8A615BF1CEB4D9500AA6AB6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A615BE1CEB4D9500AA6AB6 /* HomeViewController.m */; };
+		B8AE7E761D0AB7A30035EB38 /* PersonalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AE7E751D0AB7A30035EB38 /* PersonalCell.m */; };
+		B8AE7E791D0AE3380035EB38 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AE7E781D0AE3380035EB38 /* FilterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,10 @@
 		B8A615BD1CEB4D9500AA6AB6 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B8A615BE1CEB4D9500AA6AB6 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B8A615C11CEB6B9500AA6AB6 /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
+		B8AE7E741D0AB7A30035EB38 /* PersonalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCell.h; sourceTree = "<group>"; };
+		B8AE7E751D0AB7A30035EB38 /* PersonalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCell.m; sourceTree = "<group>"; };
+		B8AE7E771D0AE3380035EB38 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		B8AE7E781D0AE3380035EB38 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +284,7 @@
 			children = (
 				B8A615B21CEB4CB800AA6AB6 /* SlideMenuController.h */,
 				B8A615B31CEB4CB800AA6AB6 /* SlideMenuController.m */,
+				B8AE7E731D0AB7540035EB38 /* Views */,
 				B8125B6E1CEF46B700B12116 /* Login */,
 				B8125B721CEF4B4500B12116 /* Register */,
 				B8A615B51CEB4CDE00AA6AB6 /* User */,
@@ -329,6 +336,8 @@
 			children = (
 				B8A615BD1CEB4D9500AA6AB6 /* HomeViewController.h */,
 				B8A615BE1CEB4D9500AA6AB6 /* HomeViewController.m */,
+				B8AE7E771D0AE3380035EB38 /* FilterViewController.h */,
+				B8AE7E781D0AE3380035EB38 /* FilterViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -340,6 +349,15 @@
 				B81D54001CED66C10023061A /* URLMacor.h */,
 			);
 			name = Macro;
+			sourceTree = "<group>";
+		};
+		B8AE7E731D0AB7540035EB38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8AE7E741D0AB7A30035EB38 /* PersonalCell.h */,
+				B8AE7E751D0AB7A30035EB38 /* PersonalCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E475EBEBA22A12C84B9C3337 /* Frameworks */ = {
@@ -547,6 +565,7 @@
 				B8A6157E1CEB3D2700AA6AB6 /* AppDelegate.m in Sources */,
 				B8125B711CEF46FE00B12116 /* LoginViewController.m in Sources */,
 				B81D53FF1CED66600023061A /* AFNetworkingHelper.m in Sources */,
+				B8AE7E761D0AB7A30035EB38 /* PersonalCell.m in Sources */,
 				B8125B6C1CEEF0ED00B12116 /* UIView+Corner.m in Sources */,
 				B88C04261D05BAC10078D82B /* EditViewController.m in Sources */,
 				B89E6DBE1CF9741000DFD216 /* UserInfo.m in Sources */,
@@ -561,6 +580,7 @@
 				B8938B091CEC61E800364D78 /* UIViewController+Base.m in Sources */,
 				B83CEA471CF187C400651B32 /* VerifyHelper.m in Sources */,
 				B8A615BF1CEB4D9500AA6AB6 /* HomeViewController.m in Sources */,
+				B8AE7E791D0AE3380035EB38 /* FilterViewController.m in Sources */,
 				B83CEA4A1CF19FC700651B32 /* UIHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
